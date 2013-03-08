@@ -54,6 +54,6 @@ To disconnect, run the following commands on the provider node:
 These commands are also automatically issued at the begin of `./requester.sh`, so beware if you are also using loop devices etc.
 
 ### Known Issues
-* Make sure you remove the array, disconnect the loopback devices, and unmount the NFS shares  on the requester before stopping the NFS server on the provider or even remove the loopback file. On Fedora 16, this lead to kernel panics.
+* Make sure you remove the array, disconnect the loopback devices, and unmount the NFS shares  on the requester before stopping the NFS server on the provider or even remove the ramdisk. On Fedora 16, this caused some kernel panics.
 
 
